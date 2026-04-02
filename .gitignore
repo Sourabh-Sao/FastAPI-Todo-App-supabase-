@@ -1,0 +1,24 @@
+# 1. Secrets (Sabse Zaroori)
+.env
+.env.local
+.env.*
+
+# 2. Python Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# 3. Python Cache (Kachra files)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 5. OS Related (Windows/Mac ki faltu files)
+.DS_Store
+Thumbs.db
+
+# 6. Database (Agar kabhi SQLite use kiya ho)
+*.db
+*.sqlite3

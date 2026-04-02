@@ -45,33 +45,40 @@ DATABASE_URL=postgresql://postgres.[YOUR_PROJECT_REF]:[YOUR_PASSWORD]@[aws-1-ap-
 ## 3. Local Installation
 
 ### Clone the repository
+```
 git clone https://github.com/Sourabh-Sao/FastAPI-Todo-App-supabase-.git
-
+```
 ### Navigate to project folder
+```
 cd FastAPI-Todo-App-supabase-
-
+```
 ### Create and activate virtual environment
+```
 python -m venv venv
 
 source venv/bin/activate  
 
 venv\Scripts\activate           
-
+```
 ### Install dependencies
+```
 pip install -r requirements.txt
-
+```
 ### Run the application
+```
 uvicorn main:app --reload
-
+```
 
 ## 4. Docker Deployment
 
 ### Build the Docker image
+```
 docker build -t task-manager-app .
-
+```
 ### Run the container
+```
 docker run -d -p 8000:8000 --env-file .env --name task-manager-container task-manager-app
-
+```
 
 ## 🚦 API Endpoints
 
